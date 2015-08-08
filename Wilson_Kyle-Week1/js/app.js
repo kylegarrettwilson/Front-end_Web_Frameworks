@@ -5,8 +5,14 @@ app.controller("groceryController", function($scope){
     $scope.newListItem;
 
 
-    $scope.groceries = ['Bread','Milk','Eggs'];
 
+    /* beginning array */
+
+    $scope.groceries = ['Potatoes','Celery','Candy Bars'];
+
+
+
+    /* add an item */
 
     $scope.addItem = function(){
         $scope.groceries.push($scope.newListItem);
@@ -14,6 +20,9 @@ app.controller("groceryController", function($scope){
 
     };
 
+
+
+    /* remove an item */
 
     $scope.removeItem = function(item){
         var idx = $scope.groceries.indexOf(item);
