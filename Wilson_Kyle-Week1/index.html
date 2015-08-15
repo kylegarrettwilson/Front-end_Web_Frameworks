@@ -14,14 +14,14 @@
 
 <body ng-app="theApp"><!-- this is the beginning of the app, this is what angular will read -->
 
-    <div id="wrapper">
+    <div id="wrapper">  <!-- wrapper for styling -->
 
-        <div ng-controller="groceryController">
+        <div ng-controller="groceryController">   <!-- this is the controller for what to work with in angular -->
 
             <h1>Create a Grocery List</h1>
 
 
-            <div>
+            <div>   <!-- this is the input field for the user -->
                 <form ng-submit="addItem()">
                     <div>
                         <input type="text" ng-model="newListItem" placeholder="Add Grocery Item"  />
@@ -31,12 +31,12 @@
             </div>
 
 
-            <p>{{ newListItem }}</p>
+            <p>{{ newListItem }}</p>   <!-- this is watching what the user inputs -->
 
             <div>
-                <h4>Items {{ groceries.length }}</h4>
+                <h4>Items {{ groceries.length }}</h4>   <!-- this is watching the array count -->
 
-                <table>
+                <table>   <!-- this is adding the items below -->
                     <tr ng-repeat="gro in groceries">
                         <td>{{gro}}</td>
                         <td>
