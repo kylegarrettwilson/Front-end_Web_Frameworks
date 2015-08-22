@@ -4,7 +4,49 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
+
 <body>
+
+<div id="mainContent" ng-controller="choreController">
+
+    <h2>Chores to do</h2>
+
+
+
+    <div class="formSection">
+        <form>
+            <input type="text" placeholder="Chore" ng-model="chore"/>
+            <input type="text" placeholder="Word" ng-model="word"/>
+            <input type="submit" class="btn" value="Add Chore" ng-click="addChore()"/>
+            <input type="button" class="btn" value="Reset" ng-click = "resetForm()" />
+        </form>
+    </div>
+
+    <div class="listSection">
+        <table>
+            <tr>
+                <th>Chore Name</th>
+            </tr>
+            <tr ng-repeat="chore in choreArray | orderBy: 'dueDate' track by $id($index)">
+                <td>{{ chore.Mychore }}</td>
+                <td><img src="" class="deleteIcon" ng-click="deleteChore(chore)" title="Delete Chore" alt="Delete Chore Icon"/></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

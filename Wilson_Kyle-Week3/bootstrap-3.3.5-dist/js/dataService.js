@@ -141,7 +141,7 @@ angular.module("myApp").service("DataService", function(){
         billsArray.splice(billsArray.indexOf(bill), 1);
         localStorage.setItem("BillsList", JSON.stringify(billsArray));
     }
-    
+
 
 
 });

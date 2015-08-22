@@ -70,7 +70,7 @@ angular.module('myApp', ['ngRoute'])
             dataService.removeChore(choreToDelete);
         }
 
-        $scope.resetForm() = function(){
+        $scope.resetForm = function(){
             $scope.chore = '';
         }
 
