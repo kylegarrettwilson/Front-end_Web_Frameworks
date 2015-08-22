@@ -80,7 +80,7 @@ angular.module('myApp', ['ngRoute'])
         $scope.billAmount;
         $scope.billDueDate;
 
-        
+
 
         $scope.billArray = dataService.getBills();
 
