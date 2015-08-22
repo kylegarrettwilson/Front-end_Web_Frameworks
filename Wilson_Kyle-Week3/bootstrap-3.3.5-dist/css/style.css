@@ -1,0 +1,57 @@
+body{
+    width: 100%;
+    background: url(../images/dark-square.gif);
+    background-repeat: repeat;
+    padding: 30px;
+}
+
+
+.page-header>h1{
+    padding: 40px;
+    text-align: center;
+    font-size: 6em;
+    color: white;
+    letter-spacing: 20px;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+
+
+@-webkit-keyframes shake {
+    from, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+
+
