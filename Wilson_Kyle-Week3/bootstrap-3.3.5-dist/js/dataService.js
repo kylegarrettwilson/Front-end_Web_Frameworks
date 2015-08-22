@@ -3,29 +3,24 @@ angular.module('myApp').service("dataService", function(){
 
    var homeworksArray = [
        {
-           course : "Information Retrieval",
-           asgName : "Homework 2",
-           dueDate : "2015-05-27"
+           course : "Pontiac Grand Am",
+           asgName : "Car",
+           dueDate : "194720470237420734"
        },
        {
-           course : "Front-End Web Frameworks",
-           asgName : "List Application",
-           dueDate : "2015-05-22"
+           course : "GMC Sierra",
+           asgName : "Truck",
+           dueDate : "3274207430923740427"
        },
        {
-           course : "Information Retrieval",
-           asgName : "Homework 4",
-           dueDate : "2015-06-15"
+           course : "Pontiac Firebird",
+           asgName : "Car",
+           dueDate : "27420374029347024"
        },
        {
-           course : "Information Retrieval",
-           asgName : "Homework 3",
-           dueDate : "2015-06-08"
-       },
-       {
-           course : "Information Retrieval",
-           asgName : "Research Project",
-           dueDate : "2015-05-30"
+           course : "Ford Pinto",
+           asgName : "Car",
+           dueDate : "034707470420740724"
        }
 
    ];
@@ -64,7 +59,7 @@ angular.module('myApp').service("dataService", function(){
 
 
 
-    var choreArray = ["Mop", "Dust", "Bathroom", "Vacuum"];
+    var choreArray = ["Oil", "Oil Filter", "Wash", "Vacuum"];
 
 
     this.getChore = function(){
@@ -96,22 +91,22 @@ angular.module('myApp').service("dataService", function(){
 
     var billsArray = [
         {
-            name: "Nissan",
+            name: "John Doe",
             amount: "304",
             dueDate: "2015-06-07"
         },
         {
-            name: "Nissan",
+            name: "Mike Lock",
             amount: "304",
             dueDate: "2015-06-07"
         },
         {
-            name: "Nissan",
+            name: "Jim Powers",
             amount: "304",
             dueDate: "2015-06-07"
         },
         {
-            name: "Nissan",
+            name: "Kyle Kiole",
             amount: "304",
             dueDate: "2015-06-07"
         }

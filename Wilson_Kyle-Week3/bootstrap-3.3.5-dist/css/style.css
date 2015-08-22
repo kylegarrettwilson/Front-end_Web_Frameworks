@@ -1,0 +1,43 @@
+body{
+    width: 100%;
+    background-image: url(../images/vintage-flake.gif);
+    background-repeat: repeat;
+}
+
+nav{
+    font-size: 1.5em;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mainContent table{
+    width: 100%;
+   margin: 0 auto;
+    padding-top: 30px;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#mainContent td{
+    background: white;
+    border: 3px solid black;
+}
+
+#mainContent th{
+    text-decoration: underline;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#mainContent form{
+    padding-bottom: 60px;
+    font-size: 1.5em;
+}
+
+#mainContent img{
+    margin-left: 40px;
+}

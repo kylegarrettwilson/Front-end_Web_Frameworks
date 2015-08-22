@@ -7,13 +7,13 @@ angular.module('myApp', ['ngRoute'])
 
         $routeProvider.when('/view1',{
             templateUrl : "view1.html",
-            controller : "BillsController"
+            controller : "peopleController"
         }).when('/view2',{
             templateUrl : "view2.html",
-            controller : "HomeworkController"
+            controller : "salesController"
         }).when('/view3/:awesome',{
             templateUrl : "view3.html",
-            controller : "choreController"
+            controller : "workController"
         }).otherwise({
             redirectTo : "/view1"
         });
@@ -21,7 +21,7 @@ angular.module('myApp', ['ngRoute'])
 
     })
 
-    .controller('HomeworkController', function($scope,dataService){
+    .controller('salesController', function($scope,dataService){
 
         $scope.hwCourse;
         $scope.hwName;
@@ -51,7 +51,7 @@ angular.module('myApp', ['ngRoute'])
 
         }
 
-    }).controller('choreController', function($scope,$routeParams,dataService){
+    }).controller('workController', function($scope,$routeParams,dataService){
 
         $scope.chore;
 
@@ -74,7 +74,7 @@ angular.module('myApp', ['ngRoute'])
             $scope.chore = '';
         }
 
-    }).controller('BillsController', function($scope, dataService){
+    }).controller('peopleController', function($scope, dataService){
 
         $scope.billerName;
         $scope.billAmount;

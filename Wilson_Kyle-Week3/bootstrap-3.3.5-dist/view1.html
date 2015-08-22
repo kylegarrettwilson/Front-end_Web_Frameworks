@@ -1,6 +1,6 @@
-<div id="mainContent" ng-controller="BillsController">
+<div id="mainContent" ng-controller="peopleController">
 
-    <h2>Bills to Pay</h2>
+    <h2>Buyer Information</h2>
 
 
 
@@ -8,7 +8,7 @@
         <form>
             <input type="text" placeholder="Biller Name" ng-model="billerName"/>
             <input type="text" placeholder="Amount" ng-model="billAmount"/>
-            <input type="text" placeholder="Due Date" ng-model="billDueDate"/>
+            <input type="text" placeholder="Sale Date" ng-model="billDueDate"/>
             <input type="submit" class="btn" value="Add Bill" ng-click="addBill()"/>
             <input type="button" class="btn" value="Reset" ng-click = "resetForm()" />
         </form>
@@ -17,10 +17,10 @@
     <div class="listSection">
         <table>
             <tr>
-                <th>Biller Name</th>
+                <th>Buyer Name</th>
                 <th>Amount</th>
-                <th>Due Date</th>
-                <th>Mark Complete</th>
+                <th>Date</th>
+                <th>Delete</th>
             </tr>
             <tr ng-repeat="bill in billArray | orderBy: 'dueDate' track by $id($index)">
                 <td>{{ bill.name }}</td>

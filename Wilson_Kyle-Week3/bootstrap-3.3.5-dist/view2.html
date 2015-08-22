@@ -1,13 +1,13 @@
-<div id="mainContent" ng-controller="choreController">
+<div id="mainContent" ng-controller="workController">
 
-    <h2>Chores to do</h2>
+    <h2>Work to do</h2>
 
 
 
     <div class="formSection">
         <form>
-            <input type="text" placeholder="Chore" ng-model="chore"/>
-            <input type="submit" class="btn" value="Add Chore" ng-click="addChore()"/>
+            <input type="text" placeholder="Work Needed" ng-model="chore"/>
+            <input type="submit" class="btn" value="Add Work" ng-click="addChore()"/>
             <input type="button" class="btn" value="Reset" ng-click = "resetForm()" />
         </form>
     </div>
@@ -15,7 +15,8 @@
     <div class="listSection">
         <table>
             <tr>
-                <th>Chore Name</th>
+                <th>Work Needed</th>
+                <th>Delete</th>
             </tr>
             <tr ng-repeat="chore in choreArray | orderBy: 'dueDate' track by $id($index)">
                 <td>{{ chore }}</td>
