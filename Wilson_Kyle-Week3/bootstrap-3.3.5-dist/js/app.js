@@ -5,14 +5,14 @@ angular.module('myApp', ['ngRoute'])
 
     .config(function($routeProvider){
 
-        $routeProvider.when('/view',{
-            templateUrl : "view1,html",
+        $routeProvider.when('/view1',{
+            templateUrl : "view1.html",
             controller : "BillsController"
         }).when('/view2',{
             templateUrl : "view2.html",
             controller : "HomeworkController"
         }).when('/view3/:awesome',{
-            templateUrl : "view3,html",
+            templateUrl : "view3.html",
             controller : "choreController"
         }).otherwise({
             redirectTo : "/view1"

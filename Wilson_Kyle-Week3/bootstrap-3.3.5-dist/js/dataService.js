@@ -1,4 +1,4 @@
-angular.module("myApp").service("DataService", function(){
+angular.module('myApp').service("dataService", function(){
 
 
    var homeworksArray = [
@@ -37,7 +37,7 @@ angular.module("myApp").service("DataService", function(){
         return homeworksArray
     }
 
-    this.newHomeWork = function(course, name, date){
+    this.newHomework = function(course, name, date){
         var newHomework = {
             course: course,
             asgName: name,
@@ -51,7 +51,7 @@ angular.module("myApp").service("DataService", function(){
 
     this.removeHomework = function(homework){
         homeworksArray.splice(homeworksArray.indexOf(homework), 1);
-        localStorage.setItem("HomeworkList", JSON.stringify(homeworksArray));
+        localStorage.setItem("HomeworkList",JSON.stringify(homeworksArray));
     }
 
 
